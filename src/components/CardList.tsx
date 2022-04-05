@@ -16,14 +16,12 @@ interface CardsProps {
 }
 
 export function CardList({ cards }: CardsProps): JSX.Element {
-  console.log("🚀 ~ file: CardList.tsx ~ line 19 ~ CardList ~ cards", cards)
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   const [currentImage, setCurrentImage] = useState('')
 
 
   function handleViewImage(url: string): void {
-    console.log("🚀 ~ file: CardList.tsx ~ line 24 ~ handleViewImage ~ url", url)
     onOpen();
     setCurrentImage(url)
   }

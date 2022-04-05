@@ -37,7 +37,7 @@ export function ModalViewImage({
         </ModalBody>
         <ModalFooter bg="pGray.800" >
           <Link href={imgUrl}>
-            Abrir Original
+            Abrir original
           </Link>
         </ModalFooter>
 
